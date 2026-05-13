@@ -28,12 +28,6 @@ develop push → GHA staging deploy → 老板 UAT → merge main → GHA prod d
 - `aliyun-static-site` skill · OSS 静态站实施
 - `~/.claude/memories/feedback_branch_env_split.md` · 老板 5-5 拍 · 5-9 重申
 
-## 分支策略
+## Contributing
 
-- `main` = 主分支 (= 部署源 if 该仓有部署 · 否则 sync ~/.claude submodule)
-- 临时分支: `feat/<name>` · `fix/<name>` · base 永远 `origin/main`
-- PR target = `main` · CI pass + mergeable + 无 conflict 才合
-- lead merge 不 auto · subagent 不自合
-- subagent 创 worktree 干活前必读本 README
-
-详见 `~/.claude/memories/feedback_lead_main_branch_only.md`
+See [CONTRIBUTING.md](CONTRIBUTING.md) for branching strategy + PR workflow.
